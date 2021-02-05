@@ -1394,7 +1394,8 @@ svg {
     font-size: 5rem;
     line-height: 7.5rem; }
   .tab-body__link {
-    width: 208px; } }
+    width: 208px;
+    margin: 0 auto; } }
 
 .promo__container {
   display: flex;
