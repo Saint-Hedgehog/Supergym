@@ -6,12 +6,12 @@
   flex-wrap: wrap;
   width: 29.65%;
   margin: 0 auto;
-  margin-bottom: 53px;
+  margin-bottom: 39px;
 
   &::before {
     @include pseudo;
 
-    bottom: -15px;
+    bottom: -1px;
     left: 0;
     width: 100%;
     height: 2px;
@@ -21,6 +21,7 @@
 
 .tabs__item {
   margin-right: 13.5%;
+  margin-bottom: 14px;
 
   &:nth-of-type(3n) {
     margin-right: 0;
@@ -75,10 +76,10 @@
 @media (max-width: $tablet-width) {
   .tabs {
     width: 335px;
-    margin-bottom: 58px;
+    margin-bottom: 44px;
 
     &::before {
-      bottom: -14px;
+      bottom: 0;
     }
   }
 
@@ -106,11 +107,11 @@
 @media (max-width: $mobile-width) {
   .tabs {
     width: 290px;
-    margin-bottom: 49px;
+    margin-bottom: 35px;
 
     &::before {
       width: 100%;
-      bottom: -15px;
+      bottom: -1px;
     }
   }
 

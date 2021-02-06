@@ -1128,19 +1128,20 @@ main {
   flex-wrap: wrap;
   width: 29.65%;
   margin: 0 auto;
-  margin-bottom: 53px; }
+  margin-bottom: 39px; }
   .tabs::before {
     content: "";
     display: block;
     position: absolute;
-    bottom: -15px;
+    bottom: -1px;
     left: 0;
     width: 100%;
     height: 2px;
     background-color: rgba(120, 120, 120, 0.2); }
 
 .tabs__item {
-  margin-right: 13.5%; }
+  margin-right: 13.5%;
+  margin-bottom: 14px; }
   .tabs__item:nth-of-type(3n) {
     margin-right: 0; }
 
@@ -1184,9 +1185,9 @@ main {
 @media (max-width: 1199px) {
   .tabs {
     width: 335px;
-    margin-bottom: 58px; }
+    margin-bottom: 44px; }
     .tabs::before {
-      bottom: -14px; }
+      bottom: 0; }
   .tabs__item {
     margin-right: 16.5%; }
     .tabs__item:nth-of-type(3n) {
@@ -1202,10 +1203,10 @@ main {
 @media (max-width: 767px) {
   .tabs {
     width: 290px;
-    margin-bottom: 49px; }
+    margin-bottom: 35px; }
     .tabs::before {
       width: 100%;
-      bottom: -15px; }
+      bottom: -1px; }
   .tabs__item {
     margin-right: 45px; }
   .tabs__link {
@@ -1677,6 +1678,23 @@ main {
   .trainers__swiper-shadow-box:hover .trainers__slide-wrapper {
     transition: all 0.2s ease-in;
     box-shadow: 0px 0px 35px rgba(42, 59, 99, 0.17); }
+    .trainers__swiper-shadow-box:hover .trainers__slide-wrapper .trainers__info {
+      position: relative;
+      z-index: 2;
+      display: block;
+      margin-top: -4px; }
+    .trainers__swiper-shadow-box:hover .trainers__slide-wrapper h3 {
+      padding-top: 0; }
+    .trainers__swiper-shadow-box:hover .trainers__slide-wrapper .trainers__slide-image::before {
+      content: "";
+      display: block;
+      position: absolute;
+      transition: all 0.2s ease-in;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(16, 38, 84, 0.89); }
 
 .trainers__slide-wrapper {
   position: relative;
@@ -1688,22 +1706,6 @@ main {
   width: 100%;
   height: 100%;
   padding: 51px 10px 22px; }
-  .trainers__slide-image:hover .trainers__info, .trainers__slide-image:focus .trainers__info {
-    position: relative;
-    z-index: 2;
-    display: block;
-    margin-top: -4px; }
-  .trainers__slide-image:hover h3, .trainers__slide-image:focus h3 {
-    padding-top: 0; }
-  .trainers__slide-image:hover::before, .trainers__slide-image:focus::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(16, 38, 84, 0.89); }
 
 .trainers__swiper-slide--anna .trainers__slide-image {
   background: url("../img/anna-desktop@1x.jpg") no-repeat top center;
@@ -2032,8 +2034,7 @@ main {
 
 .advantages__decryption-wrapper {
   width: 65.38%;
-  padding-top: 22px;
-  padding-left: 30px; }
+  padding: 22px 0 22px 30px; }
 
 .advantages__item:nth-of-type(5n+2) .advantages__decryption-wrapper,
 .advantages__item:nth-of-type(5n+5) .advantages__decryption-wrapper {
@@ -2156,8 +2157,7 @@ main {
     margin-top: -19px; }
   .advantages__decryption-wrapper {
     width: 65.38%;
-    padding-top: 14px;
-    padding-left: 30px; }
+    padding: 14px 0 0 30px; }
   .advantages__item:nth-of-type(5n+2) .advantages__decryption-wrapper,
   .advantages__item:nth-of-type(5n+5) .advantages__decryption-wrapper {
     width: 81%;
@@ -2343,7 +2343,8 @@ main {
     background-color: #ffffff; }
 
 .stock__img-wrapper {
-  width: 50%; }
+  width: 50%;
+  background-color: #b5d4f2; }
 
 .stock__img-wrapper img {
   height: 100%; }
