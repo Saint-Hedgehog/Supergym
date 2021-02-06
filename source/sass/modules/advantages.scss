@@ -63,6 +63,7 @@
 .advantages .advantages__caption {
   @include typography (14, 21);
 
+  display: block;
   margin-top: -21px;
   font-weight: 400;
   color: $vivid-blue;

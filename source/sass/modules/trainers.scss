@@ -157,6 +157,7 @@
 
 .trainers__button-prev,
 .trainers__button-next {
+  @include button-reset;
   @include transition;
 
   position: absolute;

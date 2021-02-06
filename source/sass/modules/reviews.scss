@@ -1,20 +1,27 @@
 .reviews {
   padding-top: 58px;
-  padding-bottom: 120px;
+  padding-bottom: 80px;
 }
 
 .reviews h2 {
   @include title-desktop;
 
   margin: 0;
-  padding-bottom: 52px;
+  padding-bottom: 12px;
   text-align: center;
 }
 
 .reviews__nav-wrapper {
   position: relative;
-  width: 48.28%;
+  width: 55.2%;
   margin: 0 auto;
+}
+
+.reviews__swiper-shadow-box {
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .reviews__swiper-slide {
@@ -23,10 +30,14 @@
   background-color: $very-blue;
   color: $white;
   box-sizing: border-box;
+  box-shadow: 0 0 40px rgba($very-blue, 0.2);
 }
 
 .reviews .reviews__button-next,
 .reviews .reviews__button-prev {
+  @include button-reset;
+  @include transition;
+
   position: absolute;
   top: 50%;
   z-index: 5;
@@ -54,11 +65,11 @@
 }
 
 .reviews .reviews__button-prev {
-  left: -56px;
+  left: -16px;
 }
 
 .reviews .reviews__button-next {
-  right: -56px;
+  right: -16px;
   transform: rotate(180deg);
 }
 
@@ -100,17 +111,17 @@
 @media (max-width: $tablet-width) {
   .reviews {
     padding-top: 37px;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
   }
 
   .reviews h2 {
     @include typography (42, 42);
 
-    padding-bottom: 41px;
+    padding-bottom: 1px;
   }
 
   .reviews__nav-wrapper {
-    width: 83.48%;
+    width: 95.14%;
   }
 
   .reviews .reviews__swiper-slide {
@@ -127,17 +138,21 @@
 @media (max-width: $mobile-width) {
   .reviews {
     padding-top: 19px;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
+  }
+
+  .reviews .container {
+    padding: 0 7px;
   }
 
   .reviews h2 {
     @include typography (32, 32);
 
-    padding-bottom: 43px;
+    padding-bottom: 3px;
   }
 
   .reviews__nav-wrapper {
-    width: 77.63%;
+    width: 100%;
   }
 
   .reviews .reviews__swiper-slide {
@@ -189,10 +204,10 @@
   }
 
   .reviews .reviews__button-next {
-    right: -32px;
+    right: 8px;
   }
 
   .reviews .reviews__button-prev {
-    left: -32px;
+    left: 8px;
   }
 }

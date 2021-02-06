@@ -80,12 +80,12 @@
   }
 }
 
-.tab-body__item .tab-body__item-price {
+.tab-body__item p:nth-last-of-type(1) {
   margin-top: -108px;
   margin-bottom: 22px;
 }
 
-.tab-body__item .tab-body__item-shadow {
+.tab-body__item p:nth-last-of-type(2) {
   @include typography (100, 150);
 
   font-weight: 700;
@@ -116,7 +116,7 @@
 }
 
 @media (max-width: 1355px) {
-  .tab-body__item .tab-body__item-shadow {
+  .tab-body__item p:nth-last-of-type(2) {
     @include typography (70, 150);
   }
 }
@@ -146,12 +146,12 @@
     color: $very-dark-blue;
   }
 
-  .tab-body__item .tab-body__item-price {
+  .tab-body__item p:nth-last-of-type(1) {
     margin-top: -108px;
     margin-bottom: 22px;
   }
 
-  .tab-body__item .tab-body__item-shadow {
+  .tab-body__item p:nth-last-of-type(2) {
     @include typography (100, 150);
 
     font-weight: 700;
@@ -175,7 +175,7 @@
     }
   }
 
-  .tab-body__item .tab-body__item-shadow {
+  .tab-body__item p:nth-last-of-type(2) {
     font-size: 66px;
   }
 }
@@ -221,12 +221,12 @@
     }
   }
 
-  .tab-body__item .tab-body__item-price {
+  .tab-body__item p:nth-last-of-type(3n+1) {
     margin-top: -84px;
     margin-bottom: 10%;
   }
 
-  .tab-body__item .tab-body__item-shadow {
+  .tab-body__item p:nth-last-of-type(3n+2) {
     @include typography (80, 120);
   }
 

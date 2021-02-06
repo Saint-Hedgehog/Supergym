@@ -47,7 +47,8 @@
   font-weight: 700;
 }
 
-.promo .promo__caption {
+.promo p:nth-last-of-type(4n+2),
+.promo p:nth-last-of-type(4n+4) {
   position: relative;
   margin-bottom: -1px;
 
@@ -63,46 +64,44 @@
   }
 }
 
-.promo .promo__caption:first-child {
+.promo p:nth-last-of-type(4n+4) {
   &::before {
     width: 68%;
   }
 }
 
-.promo .promo__number {
+.promo p:nth-last-of-type(4n+3) {
   position: relative;
   margin-bottom: 9px;
-
-  &::before {
-    @include typography(14, 21);
-
-    position: absolute;
-    content: "Марта";
-    top: 11px;
-    left: 27px;
-    display: block;
-    width: 38px;
-    height: 11px;
-    font-weight: 400;
-    color: $white;
-  }
-
-  &::after {
-    @include typography(14, 21);
-
-    position: absolute;
-    content: "2019";
-    top: 29px;
-    left: 27px;
-    display: block;
-    width: 38px;
-    height: 11px;
-    font-weight: 400;
-    color: $white;
-  }
 }
 
-.promo .promo__text {
+.promo__month {
+  @include typography(14, 21);
+  @include pseudo;
+
+  top: 11px;
+  left: 27px;
+  display: block;
+  width: 38px;
+  height: 11px;
+  font-weight: 400;
+  color: $white;
+}
+
+.promo__year {
+  @include typography(14, 21);
+  @include pseudo;
+
+  top: 29px;
+  left: 27px;
+  display: block;
+  width: 38px;
+  height: 11px;
+  font-weight: 400;
+  color: $white;
+}
+
+.promo__info > p {
   padding-left: 2px;
 }
 
@@ -173,7 +172,8 @@
     @include typography (24, 36);
   }
 
-  .promo .promo__caption {
+  .promo p:nth-last-of-type(4n+2),
+  .promo p:nth-last-of-type(4n+4) {
     margin-bottom: -2px;
 
     &::before {
@@ -189,30 +189,30 @@
     }
   }
 
-  .promo .promo__number {
+  .promo p:nth-last-of-type(4n+3) {
     position: relative;
     margin-bottom: 1px;
-
-    &::before {
-      @include typography (10, 15);
-
-      top: 5px;
-      left: 16px;
-      width: 38px;
-      height: 15px;
-    }
-
-    &::after {
-      @include typography (10, 15);
-
-      top: 17px;
-      left: 16px;
-      width: 38px;
-      height: 15px;
-    }
   }
 
-  .promo .promo__text {
+  .promo__month {
+    @include typography (10, 15);
+
+    top: 5px;
+    left: 16px;
+    width: 38px;
+    height: 15px;
+  }
+
+  .promo__year {
+    @include typography (10, 15);
+
+    top: 17px;
+    left: 16px;
+    width: 38px;
+    height: 15px;
+  }
+
+  .promo__info > p {
     margin-top: 1px;
     padding-left: 1px;
     text-align: center;
@@ -245,7 +245,7 @@
 }
 
 @media (max-width: 964px) {
-  .promo .promo__text {
+  .promo__info > p {
     text-align: left;
   }
 
@@ -283,7 +283,7 @@
     padding-left: 0;
   }
 
-  .promo .promo__text {
+  .promo__info > p {
     text-align: center;
   }
 
@@ -306,7 +306,7 @@
     margin-top: 0;
   }
 
-  .promo .promo__text {
+  .promo__info > p {
     margin: 0;
     padding: 0;
     text-align: left;

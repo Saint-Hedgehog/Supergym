@@ -180,10 +180,10 @@
     width: 85%;
     margin: 0 auto;
     padding-bottom: 8px;
-  }
 
-  .gym__more-info {
-    display: none;
+    &:last-child {
+      display: none;
+    }
   }
 
   .gym__video {
@@ -267,10 +267,10 @@
     width: 100%;
     margin: 0;
     padding-bottom: 10px;
-  }
 
-  .gym .gym__main-info {
-    width: 90%;
+    &:first-child {
+      width: 90%;
+    }
   }
 
   .gym__image {
