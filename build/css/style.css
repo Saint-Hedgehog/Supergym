@@ -1787,11 +1787,6 @@ main {
 
 .trainers__button-prev,
 .trainers__button-next {
-  display: block;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  border: 0;
   transition: all 0.2s ease-in;
   position: absolute;
   top: 50%;
@@ -2525,11 +2520,6 @@ main {
 
 .reviews .reviews__button-next,
 .reviews .reviews__button-prev {
-  display: block;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  border: 0;
   transition: all 0.2s ease-in;
   position: absolute;
   top: 50%;

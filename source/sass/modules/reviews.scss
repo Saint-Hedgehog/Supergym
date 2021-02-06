@@ -35,7 +35,6 @@
 
 .reviews .reviews__button-next,
 .reviews .reviews__button-prev {
-  @include button-reset;
   @include transition;
 
   position: absolute;
