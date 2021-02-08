@@ -60,7 +60,7 @@
   color: $very-dark-blue;
 }
 
-.advantages .advantages__caption {
+.advantages span {
   @include typography (14, 21);
 
   display: block;
@@ -146,7 +146,7 @@
   width: 91.44%;
 }
 
-.advantages__item--main .advantages__caption {
+.advantages__item--main span {
   @include typography (26, 39);
 
   margin-top: -17px;
@@ -226,7 +226,7 @@
     }
   }
 
-  .advantages .advantages__caption {
+  .advantages span {
     margin-top: -19px;
   }
 
@@ -281,7 +281,7 @@
     width: 44.11%;
   }
 
-  .advantages__item--main .advantages__caption {
+  .advantages__item--main span {
     @include typography (22, 33);
 
     margin-top: -19px;
@@ -357,11 +357,11 @@
     padding-left: 0;
   }
 
-  .advantages .advantages__caption {
+  .advantages span {
     margin-top: -19px;
   }
 
-  .advantages__item:nth-of-type(5n+4) .advantages__caption {
+  .advantages__item:nth-of-type(5n+4) span {
     margin-top: -18px;
   }
 
@@ -376,7 +376,7 @@
     padding-top: 19px;
   }
 
-  .advantages__item--main .advantages__caption {
+  .advantages__item--main span {
     margin-top: -24px;
     margin-bottom: 9px;
   }

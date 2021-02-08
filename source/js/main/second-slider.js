@@ -1,7 +1,7 @@
 'use strict';
 /* global Swiper */
 (() => {
-  const newSwiper = new Swiper(`.reviews__swiper-container`, {
+  new Swiper(`.reviews__swiper-container`, {
     navigation: {
       nextEl: `.reviews__button-next`,
       prevEl: `.reviews__button-prev`,

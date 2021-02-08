@@ -152,8 +152,3 @@
     scroll-snap-type: y mandatory;
   }
 }
-
-.trainers__button-prev.swiper-button-prev.swiper-button-disabled,
-.trainers__button-next.swiper-button-next.swiper-button-disabled {
-  pointer-events: none;
-}

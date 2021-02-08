@@ -75,7 +75,7 @@
   margin-bottom: 9px;
 }
 
-.promo__month {
+.promo__data-wrapper span:nth-last-of-type(2n+2) {
   @include typography(14, 21);
   @include pseudo;
 
@@ -88,7 +88,7 @@
   color: $white;
 }
 
-.promo__year {
+.promo__data-wrapper span:nth-last-of-type(2n+1) {
   @include typography(14, 21);
   @include pseudo;
 
@@ -194,7 +194,7 @@
     margin-bottom: 1px;
   }
 
-  .promo__month {
+  .promo__data-wrapper span:nth-last-of-type(2n+2) {
     @include typography (10, 15);
 
     top: 5px;
@@ -203,7 +203,7 @@
     height: 15px;
   }
 
-  .promo__year {
+  .promo__data-wrapper span:nth-last-of-type(2n+1) {
     @include typography (10, 15);
 
     top: 17px;

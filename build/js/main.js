@@ -1,7 +1,7 @@
 'use strict';
 /* global Swiper */
 (() => {
-  const swiper = new Swiper(`.trainers__swiper-container`, {
+  new Swiper(`.trainers__swiper-container`, {
     slidesPerView: 4,
     spaceBetween: -30,
     slidesPerGroup: 40,
@@ -85,7 +85,7 @@
 'use strict';
 /* global Swiper */
 (() => {
-  const newSwiper = new Swiper(`.reviews__swiper-container`, {
+  new Swiper(`.reviews__swiper-container`, {
     navigation: {
       nextEl: `.reviews__button-next`,
       prevEl: `.reviews__button-prev`,
@@ -105,17 +105,17 @@
 
 (() => {
 
-  const anchors = document.querySelectorAll('a[href*=\\#]:not([href=\\#])');
+  const anchors = document.querySelectorAll(`a[href*=\\#]:not([href=\\#])`);
 
   for (let anchor of anchors) {
-    anchor.addEventListener('click', function (e) {
+    anchor.addEventListener(`click`, function (e) {
       e.preventDefault();
 
-      const blockID = anchor.getAttribute('href').substring(1);
+      const blockID = anchor.getAttribute(`href`).substring(1);
 
       document.getElementById(blockID).scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+        behavior: `smooth`,
+        block: `start`
       });
     });
   }

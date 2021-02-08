@@ -1,7 +1,7 @@
 'use strict';
 /* global Swiper */
 (() => {
-  const swiper = new Swiper(`.trainers__swiper-container`, {
+  new Swiper(`.trainers__swiper-container`, {
     slidesPerView: 4,
     spaceBetween: -30,
     slidesPerGroup: 40,
