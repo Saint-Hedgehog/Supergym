@@ -1,22 +1,14 @@
 .main-banner {
+  display: flex;
   width: 82.76%;
   min-height: 556px;
-  padding-right: 48.51%;
   margin-top: -3px;
-  background: url("../img/main-banner-desktop@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 52.1% auto;
-
-  @include retina {
-    background-image: url("../img/main-banner-desktop@2x.jpg");
-  }
 }
-
 
 .main-banner__title {
   position: relative;
   width: 395px;
+  margin-right: 6.78%;
 }
 
 .main-banner h1 {
@@ -65,7 +57,7 @@
 
 .main-banner__button {
   width: 234px;
-  margin-left: 41%;
+  margin-left: 41.2%;
 
   &:hover,
   &:focus {
@@ -80,8 +72,8 @@
 }
 
 @media (max-width: 1300px) {
-  .main-banner {
-    background-size: 49% auto;
+  .main-banner__list {
+    left: -2%;
   }
 }
 
@@ -90,18 +82,12 @@
     width: 100%;
     min-height: 390px;
     margin-top: 3px;
-    padding-right: 51.1%;
     padding-left: 10%;
-    background: url("../img/main-banner-tablet@1x.jpg") no-repeat top right;
-    background-size: 47.8% auto;
-
-    @include retina {
-      background-image: url("../img/main-banner-tablet@2x.jpg");
-    }
   }
 
   .main-banner__title {
     width: 326px;
+    margin-right: 4.1%;
   }
 
   .main-banner h1 {
@@ -130,7 +116,7 @@
 
   .main-banner__button {
     width: 187px;
-    margin-left: 42%;
+    margin-left: 42.5%;
   }
 }
 
@@ -145,7 +131,10 @@
     min-height: 320px;
     padding-right: 0;
     margin-top: 0;
-    background: none;
+  }
+
+  .main-banner img {
+    display: none;
   }
 
   .main-banner__title {

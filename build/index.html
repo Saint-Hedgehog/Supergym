@@ -38,9 +38,17 @@
               <li>Групповые занятия</li>
               <li>Кардио-зона</li>
             </ul>
+            <a href="#prices" class="main-banner__button button" aria-label="Скрол к купить абонемент">Купить абонемент</a>
           </div>
           <!--  -->
-          <a href="#prices" class="main-banner__button button" aria-label="Скрол к купить абонемент">Купить абонемент</a>
+          <picture>
+            <!-- 1х: 324px; 2x: 648px -->
+            <source type="image/webp" media="(max-width: 1199px)" srcset="img/main-banner-tablet@1x.webp 1x, img/main-banner-tablet@2x.webp 2x">
+            <!-- 1х: 500px; 2x: 1000px -->
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-banner-desktop@1x.webp 1x, img/main-banner-desktop@2x.webp 2x">
+            <!-- 1х: 500px; 2x: 1000px -->
+            <img src="img/main-banner-desktop@1x.jpg" srcset="img/main-banner-desktop@2x.jpg" width="500" height="556" alt="Просторный зал">
+          </picture>
         </div>
         <!--  -->
         <ul class="page-header__social-list">
