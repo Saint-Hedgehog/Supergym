@@ -712,12 +712,10 @@ main {
     opacity: 0.3; }
 
 @media (max-width: 1300px) {
+  .main-banner {
+    width: 88.76%; }
   .main-banner__list {
     left: -2%; } }
-
-@media (max-width: 1200px) {
-  .main-banner__list {
-    left: -20%; } }
 
 @media (max-width: 1199px) {
   .main-banner {
