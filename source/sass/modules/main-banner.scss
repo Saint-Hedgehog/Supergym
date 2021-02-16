@@ -7,6 +7,7 @@
 
 .main-banner__title {
   position: relative;
+  flex-shrink: 0;
   width: 395px;
   margin-right: 6.78%;
 }
@@ -43,7 +44,7 @@
 
   position: absolute;
   top: 305px;
-  left: 19px;
+  right: 263px;
 }
 
 .main-banner__list li {
@@ -68,6 +69,12 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.main-banner img {
+  width: 500px;
+  max-width: none;
+  height: 556px;
 }
 
 @media (max-width: 1300px) {
