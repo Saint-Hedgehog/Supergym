@@ -6,6 +6,7 @@
     spaceBetween: -30,
     slidesPerGroup: 40,
     speed: 1000,
+    autoHeight: true,
     keyboard: {
       enabled: true,
       onlyInViewport: true,
@@ -97,6 +98,7 @@
     spaceBetween: 0,
     slidesPerView: 1,
     loop: true,
+    autoHeight: true,
     speed: 500
   });
 })();
