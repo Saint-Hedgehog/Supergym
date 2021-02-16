@@ -664,7 +664,6 @@ main {
 .main-banner h1 {
   font-size: 6.8125rem;
   line-height: 6.8125rem;
-  position: relative;
   margin: 0;
   margin-bottom: 56px;
   padding-top: 178px;
@@ -715,6 +714,10 @@ main {
 @media (max-width: 1300px) {
   .main-banner__list {
     left: -2%; } }
+
+@media (max-width: 1200px) {
+  .main-banner__list {
+    left: -20%; } }
 
 @media (max-width: 1199px) {
   .main-banner {
