@@ -44,7 +44,7 @@
 
   position: absolute;
   top: 305px;
-  right: 263px;
+  left: 19px;
 }
 
 .main-banner__list li {
@@ -68,22 +68,6 @@
 
   &:active {
     opacity: 0.3;
-  }
-}
-
-.main-banner img {
-  width: 500px;
-  max-width: none;
-  height: 556px;
-}
-
-@media (max-width: 1300px) {
-  .main-banner {
-    width: 88.76%;
-  }
-
-  .main-banner__list {
-    left: -2%;
   }
 }
 
