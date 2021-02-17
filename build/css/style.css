@@ -2491,12 +2491,14 @@ main {
 
 .reviews__swiper-shadow-box {
   width: 100%;
+  height: 100%;
   padding: 40px;
   box-sizing: border-box;
   overflow: hidden; }
 
 .reviews__swiper-slide {
   width: 100%;
+  height: 100%;
   padding: 54px 60px 38px 170px;
   background-color: #1c3374;
   color: #ffffff;

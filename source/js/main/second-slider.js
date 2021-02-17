@@ -13,7 +13,6 @@
     spaceBetween: 0,
     slidesPerView: 1,
     loop: true,
-    autoHeight: true,
     speed: 500
   });
 })();
